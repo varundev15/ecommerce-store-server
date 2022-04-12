@@ -19,7 +19,7 @@ app.use(dbcon, () => {
 
 const server = app.listen(process.env.PORT, () => {
   console.log(`server is running ${process.env.PORT}`)
-  //addProducts();
+  // addProducts();
 })
 
 
@@ -56,10 +56,10 @@ const server = app.listen(process.env.PORT, () => {
 
 
 
-//
+
 // const products = require("./models/products");
 // const data = require('./productData.json');
-//
+
 
 
 // const addProducts = async () => {
@@ -71,6 +71,7 @@ const server = app.listen(process.env.PORT, () => {
 //     let productData = {
 //       name: Object.keys(data)[i],
 //       price: Math.floor(Math.random() * 10000),
+//       desc:Object.values(data)[i].desc,
 //       images: Object.values(data)[i].imgs,
 //     }
 
